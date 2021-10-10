@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="qtyD" onDragDetected="#btnLetter" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scrabblePointsGenerator.ScrabblePointsGeneratorController">
+   <children>
+      <Label fx:id="qtyA" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="265.0" prefHeight="17.0" prefWidth="0.0" text="9" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="141.0" text="Total Points :" />
+      <Button layoutX="342.0" layoutY="91.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="25.0" prefWidth="92.0" text="Submit Word" />
+      <TextField fx:id="textBox" layoutX="88.0" layoutY="91.0" prefHeight="25.0" prefWidth="216.0" promptText="Type your word here !" />
+      <Button layoutX="58.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="A" />
+      <Button layoutX="118.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="B" />
+      <Button fx:id="letterC" layoutX="178.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="C" />
+      <Button fx:id="letterE" layoutX="298.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="E" />
+      <Button fx:id="letterF" layoutX="358.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="F" />
+      <Button fx:id="letterG" layoutX="418.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="G" />
+      <Label fx:id="qtyB" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="265.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="qtyC" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="265.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="qtyyD" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="265.0" prefHeight="17.0" prefWidth="0.0" text="4" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="qtyE" alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="265.0" prefHeight="17.0" prefWidth="37.0" text="12" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="qtyF" alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="265.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="qtyG" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="265.0" prefHeight="17.0" prefWidth="0.0" text="3" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="pB" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="200.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pD" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="200.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pC" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="200.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pE" alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="200.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pF" alignment="CENTER" contentDisplay="CENTER" layoutX="372.0" layoutY="200.0" text="4">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pG" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="200.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pA" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="200.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4261168384879725">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8684210777282715" green="0.06834795325994492" blue="0.06834795325994492" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="6.0" prefHeight="27.0" prefWidth="500.0" text="Scrabble Points Generator" textFill="#ae1515">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="warning" alignment="CENTER" layoutX="51.0" layoutY="573.0" prefHeight="30.0" prefWidth="398.0" text="prompt" textFill="#31b8d6">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Label>
+      <Label fx:id="scoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="136.0" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-image-width: 2px; -fx-border-radius: 5px;" text="score" textFill="#21bf15">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="qtyH" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="58.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="H" />
+      <Button layoutX="118.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="I" />
+      <Button fx:id="letterC1" layoutX="178.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="J" />
+      <Button fx:id="letterD1" layoutX="238.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="K" />
+      <Button fx:id="letterE1" layoutX="298.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="L" />
+      <Button fx:id="letterF1" layoutX="358.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="M" />
+      <Button fx:id="letterG1" layoutX="418.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="N" />
+      <Label fx:id="qtyI" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="8" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyJ" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="1" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyK" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="1" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyL" alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="4" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyM" alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyN" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="354.0" prefHeight="17.0" prefWidth="0.0" text="6" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pI" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="289.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pK" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="289.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pJ" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="289.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pL" alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="289.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pM" alignment="CENTER" contentDisplay="CENTER" layoutX="372.0" layoutY="289.0" text="4">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pN" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="289.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pH" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="289.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyO" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="8" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="58.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="O" />
+      <Button layoutX="118.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="P" />
+      <Button fx:id="letterC2" layoutX="178.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="Q" />
+      <Button fx:id="letterD2" layoutX="238.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="R" />
+      <Button fx:id="letterE2" layoutX="298.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="S" />
+      <Button fx:id="letterF2" layoutX="358.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="T" />
+      <Button fx:id="letterG2" layoutX="418.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="U" />
+      <Label fx:id="qtyP" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyQ" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="4" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyR" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="6" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyS" alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="4" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyT" alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="6" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyU" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="442.0" prefHeight="17.0" prefWidth="0.0" text="4" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pP" alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="377.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pR" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="377.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pQ" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="377.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pS" alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="377.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pT" alignment="CENTER" contentDisplay="CENTER" layoutX="372.0" layoutY="377.0" text="4">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pU" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="377.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pO" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="377.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyV" alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="532.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="119.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="V" />
+      <Button layoutX="179.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="W" />
+      <Button fx:id="letterC11" layoutX="239.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="X" />
+      <Button fx:id="letterD11" layoutX="299.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="Y" />
+      <Label fx:id="qtyW" alignment="CENTER" contentDisplay="CENTER" layoutX="190.0" layoutY="532.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyX" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="532.0" prefHeight="17.0" prefWidth="0.0" text="1" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyY" alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="532.0" prefHeight="17.0" prefWidth="0.0" text="2" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pW" alignment="CENTER" contentDisplay="CENTER" layoutX="190.0" layoutY="467.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pY" alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="467.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pX" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="467.0" text="3">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="pV" alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="467.0" text="1">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordBank" layoutX="73.0" layoutY="624.0" prefHeight="62.0" prefWidth="350.0" style="-fx-background-color: WHITE; -fx-border-color: GRAY; -fx-border-width: 2px; -fx-border-radius: 5px;" text="Label" />
+      <Button fx:id="letterD111" layoutX="359.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="Z" />
+      <Label fx:id="qtyZ" alignment="CENTER" contentDisplay="CENTER" layoutX="371.0" layoutY="532.0" prefHeight="17.0" prefWidth="0.0" text="1" textFill="#6e69d6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pZ" alignment="CENTER" contentDisplay="CENTER" layoutX="371.0" layoutY="467.0" text="2">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="qtyD" layoutX="238.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnLetter" prefHeight="30.0" prefWidth="30.0" text="D" />
+   </children>
+</AnchorPane>
